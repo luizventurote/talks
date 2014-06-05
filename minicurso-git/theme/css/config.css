@@ -1,10 +1,42 @@
 
 body {
 	background: #161616;
+	color: #fff;
 }
 
 .layout-fix slide {
 	width: 900px !important;
 	height: 700px !important;
 	margin-left: -450px !important;
+}
+
+::selection {
+	background-color: #F05033;
+}
+
+/* Pre */
+pre {
+	width: 100%;
+	left: 0px;
+	font-size: 1em;
+	line-height: 1.35em;
+	padding: 10px 0 16px 50px;
+	background: #f5f5f5;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+/* Slide */
+slides > slide {
+	color: #fff;
+}
+
+slide article p {
+	padding: 5px 0 15px;
+}
+
+/* Text format */
+.txm {
+	font-size: 0.85em;
 }
