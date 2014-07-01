@@ -1,0 +1,197 @@
+/* Fonts */
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../../font/OpenSans-Light-webfont.eot');
+    src: url('../../font/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/OpenSans-Light-webfont.woff') format('woff'),
+         url('../../font/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../../font/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../../font/OpenSans-Regular-webfont.eot');
+    src: url('../../font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../../font/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../../font/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../../font/OpenSans-Semibold-webfont.eot');
+    src: url('../../font/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../../font/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../../font/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../../font/OpenSans-Bold-webfont.eot');
+    src: url('../../font/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../../font/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../../font/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../../font/OpenSans-ExtraBold-webfont.eot');
+    src: url('../../font/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('../../font/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('../../font/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Struct */
+body {
+	background: #fafafa;
+	color: #191919;
+	min-height: 0;
+}
+
+.layout-fix slide {
+	width: 900px !important;
+	height: 700px !important;
+	margin-left: -450px !important;
+}
+
+::selection {
+	background-color: #d32058;
+}
+
+p {
+	font-size: 1.5em;
+	line-height: 1.3em;
+	font-family: 'open_sansregular';
+	letter-spacing: 0em;
+	font-weight: normal;
+	text-align: center;
+}
+
+b {
+	font-family: 'open_sansbold';
+	font-weight: normal;
+	color: #d32058;
+}
+
+/* Align */
+.left {
+	text-align: left;
+}
+
+/* Pre */
+pre {
+	width: 100%;
+	left: 0px;
+	font-size: 1em;
+	line-height: 1.35em;
+	padding: 10px 0 16px 20px;
+	background: #f5f5f5;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #555;
+}
+
+/* Slide */
+slides > slide {
+	color: #515151;
+	overflow: hidden;
+	font-family: 'open_sansregular';
+	line-height: 1.3em;
+	letter-spacing: 0.03em;
+	font-weight: normal;
+}
+
+slide article p {
+	padding: 5px 0 15px;
+}
+
+/* Box */
+.box {
+	margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	line-height: 1.2em;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-family: 'open_sansbold';
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+}
+
+h2 {
+	font-size: 3.45em;
+}
+
+.title {
+	font-size: 2.8em;	
+}
+
+.title-top {
+	padding-bottom: 20px;
+	border-bottom: 2px solid #e5e5e5;
+	-webkit-box-shadow: 0px 2px 0px 0px #fff;
+	-moz-box-shadow:    0px 2px 0px 0px #fff;
+	box-shadow:         0px 2px 0px 0px #fff;
+}
+
+.title-min {
+	font-size: 2.8em;
+}
+
+.title-xmin {
+	font-size: 2.0em;
+}
+
+/* Text format */
+.txm {
+	font-size: 0.85em;
+}
+
+/* Effects */
+.shadow {
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 1);
+	box-shadow:         0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
+
+/* Lists */
+.big-list li {
+	font-size: 1.8em;
+	margin-bottom: 50px;
+}
+
+/* Lightbox */
+.lightbox {
+	width: 900px;
+	text-align: center;
+	padding: 40px 0 !important;
+	margin: 0;
+	margin-top: 550px;
+	margin-left: -60px;
+	display: block;
+	font-size: 1.5em;
+	background: rgba(0,0,0,0.9);
+	color: #fff;
+} 
+.lightbox:hover {
+	color: #eee !important;	
+}

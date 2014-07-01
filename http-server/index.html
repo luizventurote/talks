@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Servidor HTTP</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--This one seems to work all the time, but really small on ipad-->
+  <meta name="viewport" content="initial-scale=0.4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+  <link rel="stylesheet" media="all" href="theme/prettify/desert.css">
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-fix">
+
+  <!-- Introdução -->
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <h1 class="title">Servidor HTTP</h1>
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article>
+      <h2 class="title title-top">Servidor HTTP</h2>
+      <p>O servidor HTTP é a ferramenta responsável pela distribuição de documentos HTML atráves do protocolo HTTP em um sistema de arquivos.</p>
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article>
+      <h2 class="title title-top">Servidor HTTP</h2>
+      <p>Este Servidor HTTP pode ser configurado para ser acessado apenas em uma rede interna (Intranet) ou uma rede externa (Internet).</p>
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/apache-server.png" alt="Servidor HTTP Apache" title="Servidor HTTP Apache">
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article>
+      <h2 class="title title-top">Apache Web Server</h2>
+      <p>O Apache Web Server é um Servidor Web, open source, multiplatafor mais utilizado em todo mundo.</p>
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article>
+      <h2 class="title title-top">Apache Web Server</h2>
+      <p class="left">As principais características:</p>
+      <ul class="build">
+        <li>Fexível</li>
+        <li>Altamente configurável</li>
+        <li>Robustez</li>
+        <li>Escalabilidade</li>
+        <li>Pode ser configurado para diferentes funções</li>
+        <li>É composto de módulos separados onde cada um implementa uma característica diferente.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <!-- Instalação -->
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <h1 class="title">Instalação</h1>
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/wamp-logo.png" alt="WAMPServer" title="WAMPServer">
+    </article>
+  </slide>
+  <slide class="fill nobackground" style="background-image: url(images/apache-mysql-php.png)"></slide>
+  <slide class="fill nobackground" style="background-image: url(images/wamp-site.png)">
+    <article>
+      <a href="http://www.wampserver.com/en/" class="lightbox">www.wampserver.com/en/</a>
+    </article>
+  </slide>
+
+  <!-- Instalação WAMP -->
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/wamp-instalation/part-1.png" alt="WAMPServer" title="WAMPServer">
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/wamp-instalation/part-2.png" alt="WAMPServer" title="WAMPServer">
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/wamp-instalation/part-3.png" alt="WAMPServer" title="WAMPServer">
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/wamp-instalation/part-4.png" alt="WAMPServer" title="WAMPServer">
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/wamp-instalation/part-5.png" alt="WAMPServer" title="WAMPServer">
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/wamp-instalation/part-6.png" alt="WAMPServer" title="WAMPServer">
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/wamp-instalation/part-7.png" alt="WAMPServer" title="WAMPServer">
+    </article>
+  </slide>
+
+  <!-- Instalação no Linux -->
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <h1 class="title">Instalação <br>no Linux</h1>
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article>
+      <h2 class="title title-top title-xmin">Instalação no Linux</h2>
+      <div class="box">
+        <p class="left">Atualize a lista do apt</p>
+        <pre class="prettyprint"> $ sudo apt-get update <br> $ sudo apt-get upgrade </pre>
+      </div>
+      <div class="box">
+        <p class="left">Instale o Apache e o PHP</p>
+        <pre class="prettyprint"> $ sudo apt-get install apache2 php5 </pre>
+      </div>
+    </article>
+  </slide>
+  <slide class="fill nobackground">
+    <article>
+      <h2 class="title title-top title-xmin">Instalação no Linux</h2>
+      <div class="box">
+        <p class="left">Instale o MySQL</p>
+        <pre class="prettyprint"> $ sudo apt-get install mysql-server-5.5 php5-mysql </pre>
+      </div>
+      <div class="box">
+        <p class="left">Reinicie o Apache</p>
+        <pre class="prettyprint"> $ sudo /etc/init.d/apache2 restart </pre>
+      </div>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground">
+    <article>
+      <h2 class="title title-top title-xmin">Arquivos de configuração</h2>
+      <div class="box">
+        <p class="left">Os arquivos de configuração estão dispostos em:</p>
+        <p class="left" style="font-size: 0.88em">Linux: <b>/etc/apache/conf.httpd.conf</b></p>
+        <p class="left" style="font-size: 0.88em">WAMP: <b>wamp/bin/apache/apache2.4.9/conf/conf.httpd.conf</b></p>
+      </div>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground">
+    <article>
+      <h2 class="title title-top title-xmin">Iniciando/Desligando <br> o Servidor</h2>
+      <div class="box">
+        <p class="left">Para o servidor no Linux</p>
+        <pre class="prettyprint">#Parar
+$ sudo /etc/init.d/apache2 stop
+
+#Iniciar
+$ sudo /etc/init.d/apache2 start
+
+#Reiniciar
+$ sudo /etc/init.d/apache2 restart</pre>
+      </div>
+      </div>
+    </article>
+  </slide>
+
+  <!-- Dúvidas -->
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <h2>Dúvidas?</h2>
+    </article>
+  </slide>
+
+  <!-- Finalização -->
+  <slide class="fill nobackground">
+    <article class="flexbox vcenter">
+      <h2>Obrigado!</h2>
+      <p><b>Luiz Venturote | Matheus Claudino</b></p>
+      <p>IFES - Sistema de Informação</p>
+    </article>
+  </slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
