@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Talks - Luiz Venturote</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <body>
 
