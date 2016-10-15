@@ -1,0 +1,55 @@
+
+body {
+	background: #161616;
+	color: #fff;
+	background-color:#fafafa;
+	/*
+	background-image: linear-gradient(30deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc),
+	linear-gradient(150deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc),
+	linear-gradient(30deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc),
+	linear-gradient(150deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc),
+	linear-gradient(60deg, #f8f8f8 25%, transparent 25.5%, transparent 75%, #f8f8f8 75%, #f8f8f8), 
+	linear-gradient(60deg, #f8f8f8 25%, transparent 25.5%, transparent 75%, #f8f8f8 75%, #f8f8f8);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;*/
+	background: url('../../images/background.jpg') repeat;
+}
+
+.layout-fix slide {
+	width: 900px !important;
+	height: 700px !important;
+	margin-left: -450px !important;
+}
+
+::selection {
+	background-color: #F05033;
+}
+
+/* Pre */
+pre {
+	width: 100%;
+	left: 0px;
+	font-size: 1em;
+	line-height: 1.35em;
+	padding: 10px 0 16px 50px;
+	background: #f5f5f5;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+/* Slide */
+slides > slide {
+	color: #333333;
+    font-style: italic;
+    line-height: 1.6em;
+}
+
+slide article p {
+	padding: 5px 0 15px;
+}
+
+/* Text format */
+.txm {
+	font-size: 0.85em;
+}
