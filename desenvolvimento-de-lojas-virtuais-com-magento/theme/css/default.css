@@ -251,11 +251,6 @@ slide.fill img {
   background: transparent;
 }
 
-/* line 58, ../scss/default.scss */
-body {
-  background: black;
-}
-
 /* line 62, ../scss/default.scss */
 slides > slide {
   display: none;
